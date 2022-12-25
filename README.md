@@ -41,4 +41,6 @@ ou comentários acerca do sistema; ✔️
 Javascript, css e Python; ✔️ Foi utilizado Javascript, Jquery, dentre outros para melhorias no sistema.
 5. O link do repositório no GitHub deverá ser enviado por e-mail ✔️
 
+AVISO: DEIXEI O PYTHON INTREPETER SEM SER MODIFICADO (DA MANEIRA QUE USEI COM AS CONFIGURAÇÕES DA MINHA MAQUINA) POIS NÃO SABIA AO CERTO COMO QUERIAM, ENTÃO PRESUMO QUE O AMBIENTE VIRTUAL SERÁ CRIADO POR QUEM IRÁ ANALISAR O PROJETO.
+
 Agradeço novamento pela oportunidade!! :D
