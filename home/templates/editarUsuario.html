@@ -1,0 +1,74 @@
+{% load static %}
+<html>
+<link rel="stylesheet" href="{% static 'principal.css' %}">
+<title>Edição de Usuários</title>
+
+<head>
+
+<body>
+  <div class="container2">
+    <div class="form-image">
+      <img src="{% static 'img1.svg' %}" alt="img">
+    </div>
+    <h1>#VenhaPraESoft</h1>
+  </div>
+
+  <div class="container">
+    <div class="form">
+      <form method="POST">
+        {% csrf_token %}
+        <div class=" form-header">
+          <div class="title">
+            <h1>Editar Usuário Cadastrado</h1>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-minor-group">
+            <div class="input-box">
+              <label for="nome">Nome:*</label>
+              <input type="text" class="form-control" id="nome" name="nome" value="{{usuario.nome}}">
+            </div>
+            <div class="input-box">
+              <label for="sobrenome">Sobrenome:*</label>
+              <input type="text" class="form-control" id="sobrenome" name="sobrenome" value="{{usuario.sobrenome}}">
+            </div>
+          </div>
+          <div class="input-minor-group">
+            <div class="input-box">
+              <label for="idade">Idade:*</label>
+              <input type="text" class="form-control" id="idade" name="idade" value="{{usuario.idade}}">
+            </div>
+            <div class="input-box">
+              <label for="apelido">Apelido:</label>
+              <input type="text" class="form-control" id="apelido" name="apelido" value="{{usuario.apelido}}">
+            </div>
+          </div>
+          <div class="input-minor-group">
+            <div class="input-box">
+              <label for="data_de_nascimento">Data de Nascimento:*</label>
+              <input type="text" class="form-control" id="data_de_nascimento" name="data_de_nascimento"
+                value="{{usuario.data_de_nascimento}}">
+            </div>
+            <div class="input-box">
+              <label for="email">E-mail:*</label>
+              <input type="email" class="form-control" id="email" name="email" value="{{usuario.email}}">
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="observacao">Observação:</label>
+            <input type="textarea" class="form-control" id="observacao" name="observacao"
+              value="{{usuario.observacao}}">
+          </div>
+        </div>
+        <div class="cadastrar-button">
+          <button>Editar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+
+</head>
+
+</html>

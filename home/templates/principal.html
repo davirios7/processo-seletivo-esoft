@@ -1,0 +1,76 @@
+{% load static %}
+<html>
+<link rel="stylesheet" href="{% static 'principal.css' %}">
+<title>Cadastro de Usuários</title>
+
+<head>
+
+<body>
+  <div class="container2">
+    <div class="form-image">
+      <img src="{% static 'img1.svg' %}" alt="img">
+    </div>
+    <h1>#VenhaPraESoft</h1>
+  </div>
+
+  <div class="container">
+    <div class="form">
+      <form method="POST">
+        {% csrf_token %}
+        <div class=" form-header">
+          <div class="title">
+            <h1>Cadastro</h1>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-minor-group">
+            <div class="input-box">
+              <label for="nome">Nome:*</label>
+              {{form.nome}}
+            </div>
+            <div class="input-box">
+              <label for="sobrenome">Sobrenome:*</label>
+              {{form.sobrenome}}
+            </div>
+          </div>
+          <div class="input-minor-group">
+            <div class="input-box">
+              <label for="idade">Idade:*</label>
+              {{form.idade}}
+            </div>
+            <div class="input-box">
+              <label for="apelido">Apelido:</label>
+              {{form.apelido}}
+            </div>
+          </div>
+          <div class="input-minor-group">
+            <div class="input-box">
+              <label for="data_de_nascimento">Data de Nascimento:*</label>
+              {{form.data_de_nascimento}}
+            </div>
+            <div class="input-box">
+              <label for="email">E-mail:*</label>
+              {{form.email}}
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="observacao">Observação:</label>
+            {{form.observacao}}
+          </div>
+        </div>
+        <div class="cadastrar-button">
+          <button>Cadastrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="{% static 'jquery-3.6.3.min.js' %}"></script>
+  <script src="{% static 'jquery.mask.min.js' %}"></script>
+  <script src="{% static 'mask.js' %}"></script>
+</body>
+
+
+</head>
+
+</html>
