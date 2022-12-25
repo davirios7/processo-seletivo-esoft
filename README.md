@@ -19,7 +19,7 @@ programação Python, e o framework Django. O sistema terá as seguintes telas -
   
   2.3. Os campos nome e o sobrenome deverão ser gerados de forma aleatória. Para isso, utilize a api de geradores de nomes aleatórios (disponível em https://gerador-nomes.herokuapp.com); ✔️ --- o link não estava funcionando, então utilizei outra api (https://gerador-nomes.wolan.net) ---
   
-  2.4. Exemplo de uso da api de geração de nomes aleatórios: https://gerador- nomes.herokuapp.com/nome/aleatorio; --- Não foi possível visualizar também ---
+  2.4. Exemplo de uso da api de geração de nomes aleatórios: https://gerador-nomes.herokuapp.com/nome/aleatorio; --- Não foi possível visualizar também ---
 
   2.5. Ao obter os dados do nome e sobrenome, preencher automaticamente o formulário, com os valores correspondentes. Os valores nome e sobrenome, que vem da consulta da api, deverão ser salvos no campo nome; ✔️ -- Não entendi ao certo se o nome e sobrenome deveriam preencher os dois campos, mas como foi pedido preencher somento o campo "nome", foi o que fiz ---
   
